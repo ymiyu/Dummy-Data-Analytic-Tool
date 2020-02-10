@@ -1,9 +1,9 @@
 
 body {
-  background-color: #F0F0F0;
+  background-color: #282f3f;
   color: #212121;
   font-family: "Open Sans";
-  font-size: 1vw;
+  font-size: 0.9vw;
   width: 100vw;
   height: 100vh;
   max-width: 100% !important;
@@ -13,30 +13,30 @@ body {
 } 
 
 html {
+  background-color: white;
   color: #212121;
-  font-size: 1vw;
+  font-size: 0.9vw;
   overflow-x: hidden;  
-}
-	
-.tabs {
-  margin: 2vh 2vw 0vh 2vw;
-  background-color: white !important;
-  color: #212121 !important;
 }
 
 .custom-tabs {
   background-color: white !important;
   color: #212121 !important;
+  display: flex !important;
+  width: 30vw;
+  margin: 0vw 0vw 0vw 1vw;
+  border: 0.1vw solid #D9D9D9;
+  height: 70vw;
 }
 
 .custom-tab {
-  height: calc(2em + 0.7vw);
-  font-size: calc(0.2rem + 0.9vw);
+  height: calc(1rem + 2vw);
+  font-size: calc(0.3rem + 0.6vw);
   display: flex !important;
-  border-top: 0.05em solid #D9D9D9 !important;
-  border-left: 0.05em solid #D9D9D9 !important;
-  border-right: 0.05em solid #D9D9D9 !important;
-  border-bottom: 0.05em solid #D9D9D9 !important;
+  border-top: transparent !important;
+  border-left: 0.1vw solid #D9D9D9 !important;
+  border-right: transparent !important; 
+  border-bottom: 0.1vw solid #D9D9D9 !important; 
   color: #212121 !important;
   background-color: white !important;
   align-items: center;
@@ -45,36 +45,68 @@ html {
 }
 
 .custom-tab--selected { 
-  border-bottom: 0.2vw solid #66C2A5 !important;
+  border-bottom: 0.2vw solid #3288BD !important;
+}
+
+.data-tabs {
+  background-color: white !important;
+  color: #212121 !important;
+  display: flex !important;
+  width: 63vw;
+  margin: 0;
+  height: 70vw;
+}
+
+.data-tab {
+  height: calc(1rem + 2vw);
+  font-size: calc(0.3rem + 0.6vw);
+  display: flex !important;
+  border-top: transparent !important;
+  border-left: 0.1vw solid #D9D9D9 !important;
+  border-right: transparent !important; 
+  border-bottom: 0.1vw solid #D9D9D9 !important; 
+  color: #212121 !important;
+  background-color: white !important;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.data-tab--selected { 
+  border-bottom: 0.2vw solid #3288BD !important;
 }
 
 .Select-menu-outer {
-  font-size: 95%;
+  color: #212121 !important;
+  font-size: 90%;
 }
 
 .Select--multi .Select-value {
-  background-color: #FEE08B !important;
   color: #212121 !important;
   border-color: #D9D9D9 !important;
 }
 
 .Select--multi .Select-value-icon {
-  background-color: #FEE08B !important;
   color: #212121 !important;
   border-color: #D9D9D9 !important;
 }
 
  .Select--multi .Select-value-icon:hover {
-  background-color: #FEE08B !important;
   color: #212121 !important;
   border-color: #D9D9D9 !important;
 }
 
+.VirtualizedSelectOption {
+  color: #212121 !important;
+  font-size: 90%;
+  font-weight: 400 !important;
+  cursor: pointer;
+}
+
 .VirtualizedSelectFocusedOption {
-  color: #212121;
-  background-color: #FEE08B;
-  font-weight: 400;
-  font-size: 95%;
+  color: #212121 !important;
+  font-size: 90%;
+  font-weight: 600 !important;
   cursor: pointer;
 }
 
